@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AB INITIO</title>
+    <title>Ab Initio</title>
     <!-- favicon -->
     <link rel="icon" href="/img/logo1.ico">
     <link rel="stylesheet" href="/css/style.css">
