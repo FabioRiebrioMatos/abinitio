@@ -1,0 +1,33 @@
+#Iniciar os Containers do docker(Pode demorar um pouco na primeira vez):
+#docker-compose up -d
+
+#Pausar o Docker:
+#docker-compose down
+
+#Pausar o Docker para atualização de versão do banco de db_siged:
+#docker-compose down -v
+
+#Reconstruir Docker
+#docker-compose up -d --build --force-recreate --no-deps
+
+version: '3.3'
+networks:
+  web:
+volumes:
+  db_coefesp:
+services:
+  www:
+    #Caminho do Dockerfile para cnstrução do container do PHP e Apache
+    build: ./docker/images/www/
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 0.2
+    restart: always
+    ports: 
+      - "8090:80"
+    volumes:
+      - .:/var/www/html
+    # depends_on:
+    #   - db
+    networks:
+      - web
