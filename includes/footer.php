@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/css/style.css">
+
 <footer id="footer">
     <p>&copy; 2024 Ab Initio. Todos os direitos reservados.</p>
     <div class="social-media">

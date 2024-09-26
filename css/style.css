@@ -22,8 +22,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: #0e0d0d;
+    color: rgb(250, 250, 250);
     width: 100%;
     box-sizing: border-box;
 }
@@ -35,7 +35,7 @@ body {
     top: 15px;
     right: 100px;
     padding: 10px 20px;
-    background-color: #334B82;
+    background-color: #b3b5b8;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -207,7 +207,7 @@ main {
 
 /* Estilo para o rodapé */
 footer {
-    background-color: #333;
+    background-color: #ff0000;
     color: white;
     text-align: center;
     padding: 10px;

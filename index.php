@@ -7,7 +7,7 @@
     <title>Ab Initio</title>
     <!-- favicon -->
     <link rel="icon" href="/img/logo1.ico">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- icons social-media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -21,8 +21,7 @@
     <!-- Conteúdo Principal -->
     <main>
         <!-- Carrossel de Imagens -->
-        <div class="carousel"
-            style="display: flex; justify-content: center; overflow: hidden; max-width: 800px; margin: 0 auto;">
+        <div class="carousel">
             <div class="carousel-images" style="display: flex; transition: transform 0.5s;">
                 <img src="img/img1.jpg" alt="Imagem 1">
                 <img src="img/img2.jpg" alt="Imagem 2">
