@@ -7,10 +7,21 @@ menuToggle.addEventListener('click', () => {
 });
 
 // Carrossel de imagens
-let currentSlide = 0;
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-images img');
+const totalImages = images.length;
+
 function moveSlide(direction) {
-    const slides = document.querySelector('.carousel-images');
-    const totalSlides = slides.children.length;
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-    slides.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
-};
+    currentIndex = (currentIndex + direction + totalImages) % totalImages;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const offset = -currentIndex * 100; // Ajuste para o tamanho da imagem
+    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+}
+
+// Mudar a imagem a cada 3 segundos
+setInterval(() => {
+    moveSlide(1);
+}, 3000);
