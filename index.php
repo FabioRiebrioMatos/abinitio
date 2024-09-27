@@ -21,8 +21,7 @@
     <!-- Conteúdo Principal -->
     <main>
         <!-- Carrossel de Imagens -->
-        <div class="carousel"
-            style="display: flex; justify-content: center; overflow: hidden; max-width: 800px; margin: 0 auto;">
+        <div class="carousel">
             <div class="carousel-images" style="display: flex; transition: transform 0.5s;">
                 <img src="img/img1.jpg" alt="Imagem 1">
                 <img src="img/img2.jpg" alt="Imagem 2">
