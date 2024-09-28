@@ -31,5 +31,6 @@ showImage(currentIndex);
 
 // Mudar a imagem a cada 3 segundos
 setInterval(() => {
-    moveSlide(1);
-}, 300);
+    currentIndex = (currentIndex + 1) % totalImages;
+    showImage(currentIndex);
+}, 3000); // Altere para 3000 para 3 segundos
