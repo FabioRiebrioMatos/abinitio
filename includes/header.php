@@ -4,7 +4,7 @@
         <span class="nome">Ab Initio</span>
     </div>
 
-    <button class="btn-contact">Contato</button> <!-- Botão de Contato -->
+    <a href="../contact.php" class="btn-contact">Contato</a>
 
     <div class="menu-hamburguer">
         <button class="btn-hamburguer" id="menu-toggle">

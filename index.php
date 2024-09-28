@@ -7,7 +7,7 @@
     <title>Ab Initio</title>
     <!-- favicon -->
     <link rel="icon" href="/img/logo1.ico">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style-index.css">
     <!-- icons social-media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -22,13 +22,13 @@
     <main>
         <!-- Carrossel de Imagens -->
         <div class="carousel">
-            <div class="carousel-images" style="display: flex; transition: transform 0.5s;">
+            <div class="carousel-images">
                 <img src="img/img1.jpg" alt="Imagem 1">
                 <img src="img/img2.jpg" alt="Imagem 2">
                 <img src="img/img3.jpg" alt="Imagem 3">
             </div>
-            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="carousel-btn prev">&lt;</button>
+            <button class="carousel-btn next">&gt;</button>
         </div>
 
         <!-- Seção 1 -->
@@ -81,7 +81,7 @@
     <!-- Incluir o footer -->
     <?php include 'includes/footer.php'; ?>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 

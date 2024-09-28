@@ -5,15 +5,110 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.7), /* Gradiente com transparência */
-        rgba(255, 255, 255, 0.7)
-    ), url('/img/back.png');
+    overflow-x: hidden; /* Remove o scroll lateral */
+    background: url('/img/bg-index.png');
     background-size: cover; /* Faz o background preencher a página inteira */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Mantém o background fixo quando a página rola */
-    overflow-x: hidden; /* Remove o scroll lateral */
+}
+
+/* Container principal do conteúdo */
+main {
+    flex: 1; /* Ocupa o espaço restante entre o header e o footer */
+    display: flex;
+    flex-direction: column; /* Permite adicionar seções verticalmente */
+    align-items: center; /* Centraliza as seções horizontalmente */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    height: 450px; /* Ajuste a altura conforme necessário */
+    position: relative; /* Necessário para os botões */
+    top: 20px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Ajuste para o número de imagens (3 imagens * 100%) */
+}
+
+.carousel img {
+    width: 100%; 
+    height: auto;
+    flex-shrink: 0; /* Impede que as imagens encolham */
+    border-radius: 10px; /* Borda arredondada das imagens */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Estilo para as seções de conteúdo */
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0; /* Espaço entre as seções */
+    width: 100%; /* Faz a seção ocupar toda a largura disponível */
+    max-width: 1200px; /* Limita a largura máxima para não esticar demais */
+}
+
+.section-image {
+    width: 50%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.section-text {
+    padding: 20px; /* Espaçamento interno para o texto */
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+}
+
+/* Estilo para o texto nas seções */
+.section-text p {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados para um visual mais suave */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+    margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+/* Estilos específicos para alinhamento das seções */
+.content-section.left {
+    flex-direction: row; /* Imagem à esquerda, texto à direita */
+}
+
+.content-section.right {
+    flex-direction: row-reverse; /* Imagem à direita, texto à esquerda */
 }
 
 /* Estilo para o header */
@@ -111,99 +206,6 @@ body {
     font-weight: bold;
 }
 
-/* Container principal do conteúdo */
-main {
-    flex: 1; /* Ocupa o espaço restante entre o header e o footer */
-    display: flex;
-    flex-direction: column; /* Permite adicionar seções verticalmente */
-    align-items: center; /* Centraliza as seções horizontalmente */
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    max-width: 800px; /* Ajuste o tamanho máximo do carrossel */
-    top: 20px; /* Espaçamento do header */
-    position: relative; /* Necessário para os botões */
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel img {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px; /* Borda arredondada das imagens */
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    padding: 0;
-    font-size: 18px;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-btn.prev {
-    left: 10px;
-}
-
-.carousel-btn.next {
-    right: 10px;
-}
-
-.carousel-btn:hover {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-/* Estilo para as seções de conteúdo */
-.content-section {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin: 20px 0; /* Espaço entre as seções */
-    width: 100%; /* Faz a seção ocupar toda a largura disponível */
-    max-width: 1200px; /* Limita a largura máxima para não esticar demais */
-}
-
-.section-image {
-    width: 50%; /* Ajusta a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.section-text {
-    padding: 20px; /* Espaçamento interno para o texto */
-    flex: 1; /* Faz com que o texto ocupe o espaço restante */
-}
-
-/* Estilo para o texto nas seções */
-.section-text p {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
-    padding: 15px; /* Adiciona espaçamento interno */
-    border-radius: 5px; /* Cantos arredondados para um visual mais suave */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
-    margin: 0; /* Remove margens padrão do parágrafo */
-}
-
-/* Estilos específicos para alinhamento das seções */
-.content-section.left {
-    flex-direction: row; /* Imagem à esquerda, texto à direita */
-}
-
-.content-section.right {
-    flex-direction: row-reverse; /* Imagem à direita, texto à esquerda */
-}
 
 /* Estilo para o rodapé */
 footer {

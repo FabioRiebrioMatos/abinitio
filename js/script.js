@@ -8,20 +8,28 @@ menuToggle.addEventListener('click', () => {
 
 // Carrossel de imagens
 let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-images img');
+const images = document.querySelectorAll('.carousel img');
 const totalImages = images.length;
 
-function moveSlide(direction) {
-    currentIndex = (currentIndex + direction + totalImages) % totalImages;
-    updateCarousel();
+function showImage(index) {
+    const offset = index * 100; // Cada imagem ocupa 100% da largura
+    document.querySelector('.carousel-images').style.transform = `translateX(-${offset}%)`;
 }
 
-function updateCarousel() {
-    const offset = -currentIndex * 100; // Ajuste para o tamanho da imagem
-    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
-}
+document.querySelector('.carousel-btn.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalImages;
+    showImage(currentIndex);
+});
+
+document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    showImage(currentIndex);
+});
+
+// Exibir a primeira imagem ao carregar
+showImage(currentIndex);
 
 // Mudar a imagem a cada 3 segundos
 setInterval(() => {
     moveSlide(1);
-}, 3000);
+}, 300);
