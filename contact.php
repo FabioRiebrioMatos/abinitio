@@ -10,7 +10,7 @@
 
 <body>
 
-    <?php include 'includes/header-contact.php'; ?>
+    <?php include 'includes/header-back.php'; ?>
 
     <?php
     $mensagem_sucesso = "";
@@ -72,7 +72,7 @@ $mensagem
     </div>
 
 
-    <?php include 'includes/footer-contact.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 
 </body>
 

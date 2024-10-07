@@ -1,4 +1,3 @@
-
 /* Estilo base para body */
 body {
     margin: 0;
@@ -7,24 +6,30 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    /* Remove o scroll lateral */
     background: url('/img/bg-index.png');
     background-size: cover;
+    /* Faz o background preencher a página inteira */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* Mantém o background fixo quando a página rola */
 }
 
 /* Container principal do conteúdo */
 main {
     flex: 1;
+    /* Ocupa o espaço restante entre o header e o footer */
     display: flex;
     flex-direction: column;
+    /* Permite adicionar seções verticalmente */
     align-items: center;
+    /* Centraliza as seções horizontalmente */
 }
 
 /* Estilos gerais para sections */
 main section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Caixa quase transparente */
     border-radius: 8px;
     margin: 20px auto;
     padding: 20px;
@@ -72,13 +77,32 @@ main section ul li {
 .logo {
     background-color: white;
     border-radius: 5px;
-    height: 50px;
+    height: 50px; /* ajuste a altura da logo conforme necessário */
     margin-right: 15px;
 }
 
 .nome {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+/* Estilo para o botão à direita */
+.button {
+    position: absolute;
+    top: 15px;
+    left: 95%;
+    padding: 10px 20px;
+    background-color: #334B82;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #475D8E;
 }
 
 /* Estilo para o rodapé */
@@ -92,70 +116,48 @@ footer {
     box-sizing: border-box;
 }
 
-/* Social media links */
 .social-media a {
     margin: 10px;
     color: white;
 }
 
-/* Estiliza a scrollbar */
+/* Estiliza a scrollbar no WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 12px;
+    /* Largura da scrollbar */
 }
 
+/* Estiliza a parte interna da barra de rolagem */
 ::-webkit-scrollbar-track {
     background: #333;
+    /* Cor do fundo da scrollbar */
 }
 
+/* Estiliza o thumb (o elemento que se move na barra de rolagem) */
 ::-webkit-scrollbar-thumb {
     background: #334B82;
+    /* Cor do thumb */
     border-radius: 10px;
+    /* Arredondamento das bordas */
 }
 
+/* Estiliza o thumb ao passar o mouse */
 ::-webkit-scrollbar-thumb:hover {
     background: #475D8E;
+    /* Cor do thumb ao passar o mouse */
 }
 
-/* Responsividade para telas menores */
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        background-size: cover;
-        background-attachment: scroll;
-    }
-
     main section {
-        width: 100%;
-        padding: 10px;
+        padding: 15px;
     }
 
-    .header {
-        flex-direction: column;
-        padding: 10px;
+    main section h2 {
+        font-size: 20px;
     }
 
-    .carousel-images img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    main section {
-        width: 90%;
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    p, li {
+    main section p, main section ul {
         font-size: 14px;
     }
 }
