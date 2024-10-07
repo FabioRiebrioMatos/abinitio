@@ -27,6 +27,36 @@ main {
     /* Centraliza as seções horizontalmente */
 }
 
+/* Estilos gerais para sections */
+main section {
+    background-color: rgba(255, 255, 255, 0.8); /* Caixa quase transparente */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os títulos das sections */
+main section h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo para os parágrafos */
+main section p, main section ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os itens de lista */
+main section ul li {
+    margin-bottom: 8px;
+}
+
 /* Estilo para o header */
 .header {
     display: flex;
@@ -115,4 +145,19 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #475D8E;
     /* Cor do thumb ao passar o mouse */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    main section {
+        padding: 15px;
+    }
+
+    main section h2 {
+        font-size: 20px;
+    }
+
+    main section p, main section ul {
+        font-size: 14px;
+    }
 }
