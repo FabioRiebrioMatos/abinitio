@@ -154,17 +154,31 @@ footer {
     /* Cor do thumb ao passar o mouse */
 }
 
-/* Responsividade para dispositivos móveis */
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
     main section {
-        padding: 15px;
+        width: 100%;
+        padding: 10px;
     }
 
-    main section h2 {
-        font-size: 20px;
+    .header {
+        flex-direction: column;
+        padding: 10px;
     }
 
-    main section p, main section ul {
-        font-size: 14px;
+    .carousel-images img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
 }
