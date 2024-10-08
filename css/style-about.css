@@ -32,8 +32,16 @@ main section {
     background-color: rgba(255, 255, 255, 0.8); /* Caixa quase transparente */
     border-radius: 8px;
     margin: 20px auto;
+    display: flex;
+    flex-direction: column; /* Faz o conteúdo ficar em coluna */
+    align-items: center;
     padding: 20px;
-    width: 80%;
+    margin: 20px 0;
+    /* Espaço entre as seções */
+    width: 100%;
+    /* Faz a seção ocupar toda a largura disponível */
+    max-width: 1200px;
+    /* Limita a largura máxima para não esticar demais */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,7 +71,7 @@ main section ul li {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #BF6415;
     color: rgb(250, 250, 250);
     width: 100%;
     box-sizing: border-box;
@@ -75,7 +83,6 @@ main section ul li {
 }
 
 .logo {
-    background-color: white;
     border-radius: 5px;
     height: 50px; /* ajuste a altura da logo conforme necessário */
     margin-right: 15px;
@@ -92,7 +99,7 @@ main section ul li {
     top: 15px;
     left: 95%;
     padding: 10px 20px;
-    background-color: #334B82;
+    background-color: #024059;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -107,7 +114,7 @@ main section ul li {
 
 /* Estilo para o rodapé */
 footer {
-    background-color: #333;
+    background-color: #BF6415;
     color: white;
     text-align: center;
     padding: 10px;

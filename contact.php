@@ -4,7 +4,7 @@
 <head>
     <title>Formulário de Contato</title>
     <link rel="icon" href="/img/logo1.ico">
-    <link rel="stylesheet" href="/css/style-contact.css">
+    <link rel="stylesheet" href="/css/styles-contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
