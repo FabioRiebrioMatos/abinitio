@@ -34,9 +34,10 @@
 
         <!-- Seção 1 -->
         <section class="content-section left">
-            <img src="img/img1.jpg" alt="Img" class="section-image">
+            <img src="/img/post1.jpg" alt="Img" class="section-image">
             <div class="section-text">
-                <h2>Lorem Ipsum</h2>
+                <h2>QUAL É OBJETIVO DA MENTORIA?
+                </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut enim placerat, placerat nisl
                     interdum, molestie ligula. Pellentesque a enim quis quam imperdiet commodo quis a erat. Mauris
                     suscipit enim eget neque ornare, eget varius sapien facilisis. Nunc lectus lectus, pharetra sed enim
@@ -56,7 +57,7 @@
 
         <!-- Seção 2 -->
         <section class="content-section right">
-            <img src="img/img1.jpg" alt="Img" class="section-image">
+            <img src="/img/post2.jpg" alt="Img" class="section-image">
             <div class="section-text">
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut enim placerat, placerat nisl
@@ -78,7 +79,7 @@
 
                 <!-- Seção 3 -->
                 <section class="content-section left">
-            <img src="img/img1.jpg" alt="Img" class="section-image">
+            <img src="/img/post3.jpg" alt="Img" class="section-image">
             <div class="section-text">
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut enim placerat, placerat nisl
