@@ -23,10 +23,10 @@
         <!-- Carrossel de Imagens -->
         <div class="carousel">
             <div class="carousel-images">
-                <img src="img/img1.jpg" alt="Imagem 1">
-                <img src="img/img2.jpg" alt="Imagem 2">
-                <img src="img/img3.jpg" alt="Imagem 3">
-                <img src="img/img2.jpg" alt="Imagem 4">
+                <img src="/img/carrossel1.jpg" alt="Imagem 1">
+                <img src="/img/carrossel2.jpg" alt="Imagem 2">
+                <img src="/img/carrossel3.jpg" alt="Imagem 3">
+                <img src="/img/carrossel4.jpg" alt="Imagem 4">
             </div>
             <button class="carousel-btn prev">&lt;</button>
             <button class="carousel-btn next">&gt;</button>
