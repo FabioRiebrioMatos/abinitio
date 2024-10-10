@@ -109,6 +109,7 @@ main {
     /* Espaçamento interno para o texto */
     flex: 1;
     /* Faz com que o texto ocupe o espaço restante */
+    text-align: justify;
 }
 
 /* Estilo para o texto nas seções */
