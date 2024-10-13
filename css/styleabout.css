@@ -95,21 +95,24 @@ main section ul li {
 
 /* Estilo para o botão à direita */
 .button-back {
-    position: absolute;
-    top: 15px;
-    left: 95%;
-    padding: 10px 20px;
-    background-color: #024059;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Padding interno do botão */
+    background-color: #024059; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    transition: background-color 0.3s; /* Efeito de transição */
+    position: absolute; /* Para controle de posicionamento */
+    top: 15px; /* Distância do topo */
+    right: 20px; /* Ajuste para a posição desejada à direita */
+    /* Remover margem para desktop */
+    margin: 0; 
 }
 
+/* Efeito de hover */
 .button-back:hover {
-    background-color: #475D8E;
+    background-color: #475D8E; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estilo para o rodapé */

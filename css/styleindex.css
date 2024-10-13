@@ -84,19 +84,31 @@ main {
     background-color: rgba(255, 255, 255, 1);
 }
 
+/* Estilo para as seções de conteúdo */
 .content-section {
     display: flex;
-    flex-direction: row; /* Coloca os itens lado a lado por padrão */
-    margin-bottom: 20px; /* Adicione espaço entre seções */
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    /* Espaço entre as seções */
+    width: 100%;
+    /* Faz a seção ocupar toda a largura disponível */
+    max-width: 1200px;
+    /* Limita a largura máxima para não esticar demais */
 }
 
 .section-image {
-    max-width: 50%; /* Ajuste conforme necessário */
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    width: 50%;
+    /* Ajusta a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 .section-text {
-    max-width: 50%; /* Ajuste conforme necessário */
+    padding: 20px;
+    /* Espaçamento interno para o texto */
+    flex: 1;
+    /* Faz com que o texto ocupe o espaço restante */
     text-align: justify;
 }
 
@@ -137,30 +149,37 @@ main {
     box-sizing: border-box;
 }
 
-
-/* Estilo para o botão à direita */
+/* Estilo para o botão de contato */
 .btn-contact {
-    position: absolute;
-    top: 15px;
-    right: 100px;
-    padding: 10px 20px;
-    background-color: #024059;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Padding interno do botão */
+    background-color: #024059; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    transition: background-color 0.3s; /* Efeito de transição */
+    position: absolute; /* Para controle de posicionamento */
+    top: 15px; /* Distância do topo */
+    right: 20px; /* Ajuste para a posição desejada à direita */
+    /* Remover margem para desktop */
+    margin: 0; 
 }
 
+/* Efeito de hover para o botão de contato */
 .btn-contact:hover {
     background-color: #475D8E;
 }
 
+/* Estilo para o menu hamburguer */
 .menu-hamburguer {
-    position: relative;
+    position: absolute; /* Mantém a posição absoluta em telas maiores */
+    top: 10px; /* Distância do topo */
+    right: 110px; /* Ajuste para a posição desejada à direita */
+    margin: 0; /* Remove margens para telas maiores */
 }
 
+/* Estilo para o botão hamburguer */
 .btn-hamburguer {
     background: none;
     border: none;
@@ -169,23 +188,22 @@ main {
     padding: 10px;
 }
 
+/* Estilo das barras do menu hamburguer */
 .bar {
     display: block;
     width: 30px;
     height: 4px;
-    background-color: #024059;
-    /* Cor das barras do menu hamburguer */
+    background-color: #024059; /* Cor das barras do menu hamburguer */
     margin: 5px 0;
 }
 
+/* Estilo do dropdown menu */
 .dropdown-menu {
-    display: none;
+    display: none; /* Escondido por padrão */
     position: absolute;
     right: 0;
-    top: 50px;
-    /* Ajuste conforme necessário */
-    background-color: rgba(255, 255, 255, 0.9);
-    /* Fundo claro e transparente */
+    top: 50px; /* Ajuste conforme necessário */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo claro e transparente */
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -193,19 +211,17 @@ main {
 }
 
 .dropdown-menu.active {
-    display: block;
+    display: block; /* Mostra o menu dropdown quando ativo */
 }
 
 .dropdown-menu a {
     display: block;
     padding: 10px 15px;
-    color: #333;
-    /* Cor do texto */
+    color: #333; /* Cor do texto */
 }
 
 .dropdown-menu a:hover {
-    background-color: #f0f0f0;
-    /* Efeito de hover */
+    background-color: #f0f0f0; /* Efeito de hover */
 }
 
 .logo-nome {

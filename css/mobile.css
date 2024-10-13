@@ -5,13 +5,37 @@
     /* Ajuste do formulário na página de contato */
     form {
         max-width: 85%;
-        /* O formulário ocupará 90% da largura da tela */
+        /* O formulário ocupará 85% da largura da tela */
     }
 
     .carousel-images img {
         width: 100%;
         /* Garante que as imagens do carrossel fiquem responsivas */
         height: auto;
+    }
+
+    .content-section {
+        flex-direction: column !important; /* Força a direção para coluna */
+        align-items: center !important; /* Centraliza os itens */
+    }
+
+    .section-image {
+        order: 1; /* A imagem vem primeiro */
+        width: 95% !important; /* Faz a imagem ocupar toda a largura */
+        max-width: 100%; /* Limita a largura máxima */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .section-text {
+        order: 2; /* O texto vem depois da imagem */
+        text-align: center; /* Centraliza o texto */
+        width: 95% !important; /* Faz o texto ocupar toda a largura */
+        padding: 10px; /* Ajusta o padding para o texto */
+        box-sizing: border-box; /* Inclui padding na largura total */
+    }
+
+    .section-text p {
+        text-align: justify;
     }
 
     .header {
@@ -42,18 +66,15 @@
         /* Tamanho ajustado da fonte */
     }
 
-    .header .btn-contact {
-        display: block;
-        max-width: 100%;
-        margin-top: 10px;
-        padding: 10px 20px;
-        z-index: 10;
-    }
-
-    .menu-hamburger {
-        position: absolute;
-        top: 20px;
-        right: 20px;
+    .btn-contact,
+    .button-back,
+    .menu-hamburguer {
+        display: block; /* Mostra os elementos no mobile */
+        width: 100%; /* Faz os elementos ocuparem toda a largura disponível */
+        text-align: center; /* Centraliza o conteúdo */
+        position: relative; /* Para mobile, posicione normalmente */
+        top: auto; /* Remove o top */
+        right: auto; /* Remove o right */
     }
 
     /* Ajuste do footer para telas menores */

@@ -26,6 +26,7 @@ form {
     background-color: #fff; /* Cor de fundo do formulário */
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    margin-bottom: 60px; /* Espaçamento */  
 }
 
 label {
@@ -86,21 +87,24 @@ input[type="submit"]:hover {
 
 /* Estilo para o botão à direita */
 .button-back {
-    position: absolute;
-    top: 15px;
-    left: 95%;
-    padding: 10px 20px;
-    background-color: #024059;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Padding interno do botão */
+    background-color: #024059; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    transition: background-color 0.3s; /* Efeito de transição */
+    position: absolute; /* Para controle de posicionamento */
+    top: 15px; /* Distância do topo */
+    right: 20px; /* Ajuste para a posição desejada à direita */
+    /* Remover margem para desktop */
+    margin: 0; 
 }
 
+/* Efeito de hover */
 .button-back:hover {
-    background-color: #475D8E;
+    background-color: #475D8E; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estilo para o rodapé */
@@ -108,10 +112,11 @@ footer {
     background-color: #BF6415;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px; /* Aumente o padding aqui para dar mais espaço */
     width: 100%;
-    position: relative; /* Mantenha relativo para suportar páginas com muito conteúdo */
-    bottom: 0; /* Coloca no final da página */
+    position: fixed; /* Muda para fixo */
+    bottom: 0;
+    left: 0;
     font-size: 1rem;
     box-sizing: border-box;
 }
