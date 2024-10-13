@@ -8,6 +8,11 @@
         /* O formulário ocupará 85% da largura da tela */
     }
 
+    .carousel {
+        width: 95%;
+        height: auto;
+    }
+
     .carousel-images img {
         width: 100%;
         /* Garante que as imagens do carrossel fiquem responsivas */
@@ -64,6 +69,15 @@
         /* Espaço entre o nome e o botão */
         font-size: 1.5rem;
         /* Tamanho ajustado da fonte */
+    }
+
+    .sobre-abinitio,
+    .oferta,
+    .comportamento-forum,
+    .porque-participar,
+    .contato {
+        width: 85%;
+        height: auto;
     }
 
     .btn-contact,
