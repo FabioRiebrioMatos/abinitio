@@ -4,5 +4,5 @@
         <span class="nome">Ab Initio</span>
     </div>
 
-    <a href="../index.php" class="button">Voltar</a>
+    <a href="../index.php" class="button-back">Voltar</a>
 </header>

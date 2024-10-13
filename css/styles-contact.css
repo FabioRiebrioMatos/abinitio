@@ -85,7 +85,7 @@ input[type="submit"]:hover {
 }
 
 /* Estilo para o botão à direita */
-.button {
+.button-back {
     position: absolute;
     top: 15px;
     left: 95%;
@@ -99,7 +99,7 @@ input[type="submit"]:hover {
     transition: background-color 0.3s;
 }
 
-.button:hover {
+.button-back:hover {
     background-color: #475D8E;
 }
 
@@ -110,6 +110,8 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
+    position: relative; /* Mantenha relativo para suportar páginas com muito conteúdo */
+    bottom: 0; /* Coloca no final da página */
     font-size: 1rem;
     box-sizing: border-box;
 }
@@ -139,33 +141,3 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #475D8E; /* Cor do thumb ao passar o mouse */
 }
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        background-size: cover;
-        background-attachment: scroll;
-    }
-
-    main section {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .carousel-images img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
-

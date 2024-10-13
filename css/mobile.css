@@ -1,0 +1,66 @@
+/* Ajustes específicos para dispositivos móveis */
+
+@media (max-width: 768px) {
+
+    /* Ajuste do formulário na página de contato */
+    form {
+        max-width: 85%;
+        /* O formulário ocupará 90% da largura da tela */
+    }
+
+    .carousel-images img {
+        width: 100%;
+        /* Garante que as imagens do carrossel fiquem responsivas */
+        height: auto;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        /* Empilha os itens verticalmente */
+        justify-content: center;
+        /* Centraliza o conteúdo no eixo vertical */
+        align-items: center;
+        /* Centraliza os itens no eixo horizontal */
+        padding: 20px 0;
+        /* Adiciona padding para aumentar o espaçamento vertical */
+        text-align: center;
+    }
+
+    .header .logo {
+        width: auto;
+        height: 60px;
+        /* Ajusta a altura do logo */
+        margin-bottom: 10px;
+        /* Espaço entre logo e o nome */
+    }
+
+    .header .nome {
+        margin-bottom: 10px;
+        /* Espaço entre o nome e o botão */
+        font-size: 1.5rem;
+        /* Tamanho ajustado da fonte */
+    }
+
+    .header .btn-contact {
+        display: block;
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 10px 20px;
+        z-index: 10;
+    }
+
+    .menu-hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Ajuste do footer para telas menores */
+    footer {
+        font-size: 1rem;
+        /* Deixa o texto do footer com um tamanho legível */
+        padding: 15px;
+        /* Aumenta o padding para melhorar a área de toque */
+    }
+}

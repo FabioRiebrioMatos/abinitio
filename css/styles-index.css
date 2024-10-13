@@ -84,31 +84,19 @@ main {
     background-color: rgba(255, 255, 255, 1);
 }
 
-/* Estilo para as seções de conteúdo */
 .content-section {
     display: flex;
-    align-items: center;
-    padding: 20px;
-    margin: 20px 0;
-    /* Espaço entre as seções */
-    width: 100%;
-    /* Faz a seção ocupar toda a largura disponível */
-    max-width: 1200px;
-    /* Limita a largura máxima para não esticar demais */
+    flex-direction: row; /* Coloca os itens lado a lado por padrão */
+    margin-bottom: 20px; /* Adicione espaço entre seções */
 }
 
 .section-image {
-    width: 50%;
-    /* Ajusta a largura da imagem */
-    height: auto;
-    /* Mantém a proporção da imagem */
+    max-width: 50%; /* Ajuste conforme necessário */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
 }
 
 .section-text {
-    padding: 20px;
-    /* Espaçamento interno para o texto */
-    flex: 1;
-    /* Faz com que o texto ocupe o espaço restante */
+    max-width: 50%; /* Ajuste conforme necessário */
     text-align: justify;
 }
 
@@ -278,48 +266,4 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #475D8E;
     /* Cor do thumb ao passar o mouse */
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        background-size: cover;
-        background-attachment: scroll;
-    }
-
-    main section {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .carousel-images img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    main section {
-        width: 90%;
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    p, li {
-        font-size: 14px;
-    }
 }

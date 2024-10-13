@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - Ab Initio</title>
+    <title>Ab Initio</title>
+    <!-- favicon -->
     <link rel="icon" href="/img/logo1.ico">
     <link rel="stylesheet" href="/css/style-about.css">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 768px)">
+    <!-- icons social-media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
@@ -58,10 +61,14 @@
         <section class="porque-participar">
             <h2>Por que participar da AB INITIO?</h2>
             <ul>
-                <li>Acelerar o desenvolvimento profissional: Com a orientação de um mentor experiente, você poderá alcançar seus objetivos de carreira mais rapidamente.</li>
-                <li>Aumentar a confiança e a segurança: A mentoria te ajudará a superar desafios e a se sentir mais preparado para enfrentar os desafios da advocacia.</li>
-                <li>Construir uma rede de contatos sólida: A comunidade AB INITIO te conectará com outros profissionais do Direito, abrindo portas para novas oportunidades.</li>
-                <li>Desenvolver habilidades essenciais para o sucesso: Você aprenderá a se comunicar de forma eficaz, a negociar com habilidade e a construir relacionamentos duradouros.</li>
+                <li>Acelerar o desenvolvimento profissional: Com a orientação de um mentor experiente, você poderá
+                    alcançar seus objetivos de carreira mais rapidamente.</li>
+                <li>Aumentar a confiança e a segurança: A mentoria te ajudará a superar desafios e a se sentir mais
+                    preparado para enfrentar os desafios da advocacia.</li>
+                <li>Construir uma rede de contatos sólida: A comunidade AB INITIO te conectará com outros profissionais
+                    do Direito, abrindo portas para novas oportunidades.</li>
+                <li>Desenvolver habilidades essenciais para o sucesso: Você aprenderá a se comunicar de forma eficaz, a
+                    negociar com habilidade e a construir relacionamentos duradouros.</li>
             </ul>
         </section>
 
