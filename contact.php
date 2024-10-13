@@ -7,7 +7,7 @@
     <title>Ab Initio</title>
     <!-- favicon -->
     <link rel="icon" href="/img/logo1.ico">
-    <link rel="stylesheet" href="/css/styles-contact.css">
+    <link rel="stylesheet" href="/css/stylecontact.css">
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 768px)">
     <!-- icons social-media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
