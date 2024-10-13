@@ -29,8 +29,8 @@ document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
 // Exibir a primeira imagem ao carregar
 showImage(currentIndex);
 
-// Mudar a imagem a cada 10 segundos
+// Mudar a imagem a cada 8 segundos
 setInterval(() => {
     currentIndex = (currentIndex + 1) % totalImages;
     showImage(currentIndex);
-}, 10000); // Altere para 10000 para 10 segundos
+}, 8000); // Altere para 8000 para 8 segundos
