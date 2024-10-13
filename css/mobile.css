@@ -78,6 +78,7 @@
     .contato {
         width: 85%;
         height: auto;
+        text-align: justify;
     }
 
     .btn-contact,
