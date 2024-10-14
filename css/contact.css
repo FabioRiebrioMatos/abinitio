@@ -114,7 +114,6 @@ footer {
     text-align: center;
     padding: 20px; /* Aumente o padding aqui para dar mais espaço */
     width: 100%;
-    position: fixed; /* Muda para fixo */
     bottom: 0;
     left: 0;
     font-size: 1rem;
