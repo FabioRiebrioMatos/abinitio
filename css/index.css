@@ -37,7 +37,7 @@ main {
     /* Ajuste a altura conforme necessário */
     position: relative;
     /* Necessário para os botões */
-    top: 20px;
+    top: 10px;
 }
 
 .carousel-images {
@@ -89,7 +89,7 @@ main {
     display: flex;
     align-items: center;
     padding: 20px;
-    margin: 20px 0;
+    margin: -20px;
     /* Espaço entre as seções */
     width: 100%;
     /* Faz a seção ocupar toda a largura disponível */
