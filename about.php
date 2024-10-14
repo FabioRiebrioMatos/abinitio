@@ -74,7 +74,6 @@
 
         <section class="contato">
             <h2>Para mais informações entre em contato conosco.</h2>
-            <p>[Insira aqui os dados de contato da AB INITIO]</p>
         </section>
     </main>
 
