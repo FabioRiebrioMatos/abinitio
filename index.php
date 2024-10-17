@@ -85,7 +85,9 @@
         </section>
 
     </main>
-
+    <!-- Incluir Vlibras -->
+    <?php include 'includes/vlibras.php'; ?>
+    
     <!-- Incluir o footer -->
     <?php include 'includes/footer.php'; ?>
 
